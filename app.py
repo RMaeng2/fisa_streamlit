@@ -58,6 +58,7 @@ if st.sidebar.selectbox("I:",["f"]) == "f":
 
 st.sidebar_val2 = st.sidebar.slider("Quinn Mallory")
 st.write(sidebar_val2)
+
 my_slider_val = st.slider("Quinn Mallory", 1, 88)
 st.write(slider_val)
 

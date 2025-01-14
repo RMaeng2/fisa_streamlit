@@ -13,15 +13,14 @@ img_list = ['https://i.imgur.com/t2ewhfH.png',
 
 # 검색창 UI
 st.title("")
-search = st.text_input(input("찾을 애니메이션 이름을 입력하세요."))
+search = st.text_input("찾을 애니메이션 이름을 입력하세요.")
 
-print(search)
 
 
 # 검색 로직
 for ani in ani_list:
-    if search in ani[0] :
+    if search in ani :
         img_idx = ani_list.index(ani)
 
-if search == '': # 초기 상태를 이미지없이 실행
-    st.image(img_list(img_idx))
+if search != '': # 초기 상태를 이미지없이 실행
+    st.image(img_list[img_idx])
